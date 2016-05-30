@@ -1,0 +1,7 @@
+c:\users\michael\documents\visual studio 2015\Projects\mojgrep\mojgrep\bin\Debug\mojgrep.exe.config
+C:\Users\Michael\Documents\mojgrep\mojgrep\bin\Debug\mojgrep.exe.config
+C:\Users\Michael\Documents\mojgrep\mojgrep\bin\Debug\mojgrep.exe
+C:\Users\Michael\Documents\mojgrep\mojgrep\bin\Debug\mojgrep.pdb
+C:\Users\Michael\Documents\mojgrep\mojgrep\obj\Debug\mojgrep.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\mojgrep\mojgrep\obj\Debug\mojgrep.exe
+C:\Users\Michael\Documents\mojgrep\mojgrep\obj\Debug\mojgrep.pdb
