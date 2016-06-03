@@ -1,4 +1,4 @@
-﻿namespace mojgrep
+﻿namespace mojgrep.DataStuff
 {
     public interface IDataConverter
     {

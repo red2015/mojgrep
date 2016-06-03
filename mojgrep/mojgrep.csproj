@@ -43,18 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsolDisplayer.cs" />
-    <Compile Include="DataTxtConverter.cs" />
-    <Compile Include="FileStuff\FilePDFReader.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="CommandStuff\ColorStuff\ColorConsoleFactory.cs" />
+    <Compile Include="CommandStuff\ColorStuff\ColorStatus.cs" />
+    <Compile Include="CommandStuff\FinderStuff\FinderFactory.cs" />
+    <Compile Include="CommandStuff\FinderStuff\FinderStatus.cs" />
+    <Compile Include="CommandStuff\FinderStuff\ContainingChainFinder.cs" />
+    <Compile Include="CommandStuff\FinderStuff\IFinder.cs" />
+    <Compile Include="CommandStuff\FinderStuff\NotContainingChainFinder.cs" />
+    <Compile Include="CommandStuff\GrepManager.cs" />
+    <Compile Include="DisplayStuff\ConsolDisplayer.cs" />
+    <Compile Include="DataStuff\DataTxtConverter.cs" />
+    <Compile Include="FileStuff\ConsoleReader.cs" />
     <Compile Include="FileStuff\FileTxtReader.cs" />
     <Compile Include="FileStuff\IReader.cs" />
-    <Compile Include="IDataConverter.cs" />
+    <Compile Include="DataStuff\IDataConverter.cs" />
+    <Compile Include="DisplayStuff\IDisplayer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

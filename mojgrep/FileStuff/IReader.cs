@@ -1,4 +1,6 @@
-﻿namespace mojgrep.FileStuff
+﻿using mojgrep.DataStuff;
+
+namespace mojgrep.FileStuff
 {
     public interface IReader
     {
