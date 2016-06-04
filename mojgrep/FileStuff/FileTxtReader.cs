@@ -12,7 +12,14 @@ namespace mojgrep.FileStuff
             {
                 try
                 {
-                    string[] text = File.ReadAllLines(path);
+                    string[] text;
+                    if (File.Exists(path))
+                        text = File.ReadAllLines(path);
+                    else
+                    {
+                        string exeLocation = AppDomain.CurrentDomain.BaseDirectory;
+                        text = File.ReadAllLines(Path.Combine(exeLocation, path));
+                    }
                     IDataConverter dataConverter = new DataTxtConverter(text);
                     return dataConverter;
                 }

@@ -1,0 +1,5 @@
+C:\Users\Michael\Documents\mojgrep\mojgrep\bin\Release\mojgrep.exe.config
+C:\Users\Michael\Documents\mojgrep\mojgrep\bin\Release\mojgrep.exe
+C:\Users\Michael\Documents\mojgrep\mojgrep\bin\Release\mojgrep.pdb
+C:\Users\Michael\Documents\mojgrep\mojgrep\obj\Release\mojgrep.exe
+C:\Users\Michael\Documents\mojgrep\mojgrep\obj\Release\mojgrep.pdb
