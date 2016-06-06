@@ -22,7 +22,7 @@ namespace mojgrep.DisplayStuff
                 ConsoleColor orginConsoleColor = Console.ForegroundColor;
                 foreach (var splitedWords in splited)
                 {
-                    ColoredConsoleWrite(splitedWords.Equals(_chain) ? _color : orginConsoleColor, splitedWords);
+                    ColoredConsoleWrite(Regex.IsMatch(splitedWords, _chain) ? _color : orginConsoleColor, splitedWords);
                 }
                 NewLine();
             }

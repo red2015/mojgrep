@@ -18,6 +18,7 @@ namespace mojgrep.FileStuff
                     else
                     {
                         string exeLocation = AppDomain.CurrentDomain.BaseDirectory;
+                        Console.WriteLine(Path.Combine(exeLocation, path));
                         text = File.ReadAllLines(Path.Combine(exeLocation, path));
                     }
                     IDataConverter dataConverter = new DataTxtConverter(text);
@@ -25,7 +26,7 @@ namespace mojgrep.FileStuff
                 }
                 catch (Exception)
                 {
-                    Console.Write("Path not exist");
+                    Console.Write("File not exist");
                     Environment.Exit(1);
                 }
             }

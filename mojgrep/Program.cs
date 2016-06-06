@@ -1,6 +1,4 @@
-﻿using System;
-using mojgrep.CommandStuff;
-using mojgrep.DisplayStuff;
+﻿using mojgrep.CommandStuff;
 
 namespace mojgrep
 {

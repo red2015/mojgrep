@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using mojgrep.CommandStuff;
 using mojgrep.CommandStuff.ColorStuff;
 using mojgrep.CommandStuff.FinderStuff;
 
@@ -46,10 +45,8 @@ namespace mojgrep
         private bool AssingStatus()
         {
             var arguments = _args.ToList();
-            if (arguments.Count <= 0)
-            {
-                return true;
-            }
+            if (ArgumentsExist(arguments)) return true;
+             
             if (arguments.Contains("-v"))
             {
                 _finderStatus = FinderStatus.NotContaining;
@@ -60,14 +57,20 @@ namespace mojgrep
                 _colorStatus = ColorStatus.Colored;
                 RemoveCommand(arguments, "-color");
             }
-            if (arguments.Count <= 0)
-                return true;
+            if (ArgumentsExist(arguments)) return true;
             
             _chain = arguments.FirstOrDefault();
             if (arguments.Count > 1)
             {
                 _path = arguments.LastOrDefault();
             }
+            return false;
+        }
+
+        private static bool ArgumentsExist(List<string> arguments)
+        {
+            if (arguments.Count <= 0)
+                return true;
             return false;
         }
 
